@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+<!-- put in the user that signed in -->
+<div class="user-profile">
+  <h2><%= user.name %></h2>
+  <p><%= user.id %></p>
+  <img class="user-pic" src="<%= user.avatarUrl %>" alt="User image" />
+</div>
+<h3 class="friends-header">Friends</h3>
+<div class="friends-container">
+  <% for (let i = 0; i < amigos.length; i++) { %>
+  <form method="POST" action="/browseUser">
+    <% const amigo = amigos[i].avatarUrl; %>
+    <button class="frndbttn" name="submittedUserId" alt="Submit" value="<%= amigos[i].id %>">
+      <img class="friends" src="<%= amigo %>" alt="Friends face" />
+    </button>
+  </form>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

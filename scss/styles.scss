@@ -3,7 +3,8 @@
 @import 'typography';
 
 body {
-    background: #fafafa;
+    background: rgb(93,148,255);
+    background: radial-gradient(circle, rgba(93,148,255,1) 0%, rgba(245,37,255,1) 100%);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -56,4 +57,45 @@ body {
         justify-content: space-between;
         min-height: 500px;
     }
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+.user-profile {
+    text-align: center;
+}
+
+.user-pic {
+    margin: 10px;
+    max-width: 800px;
+    max-height: 800px;
+    border-radius: 400px;
+    object-fit: cover;
+}
+
+.friends-header {
+    text-align: center;
+}
+
+.frndbttn {
+    border: none;
+    background-color: transparent;
+}
+
+.friends-container {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(152,152,152,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    min-height: 200px;
+}
+
+.friends {
+    margin: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
 }

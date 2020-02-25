@@ -84,7 +84,8 @@ codeblock {
   padding: 12px 14px; }
 
 body {
-  background: #fafafa;
+  background: #5d94ff;
+  background: radial-gradient(circle, #5d94ff 0%, #f525ff 100%);
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
@@ -123,3 +124,37 @@ body {
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px; } }
+
+h1 {
+  font-family: fantasy; }
+
+.user-profile {
+  text-align: center; }
+
+.user-pic {
+  margin: 10px;
+  max-width: 800px;
+  max-height: 800px;
+  border-radius: 400px;
+  object-fit: cover; }
+
+.friends-header {
+  text-align: center; }
+
+.frndbttn {
+  border: none;
+  background-color: transparent; }
+
+.friends-container {
+  background: white;
+  background: radial-gradient(circle, white 0%, #989898 100%);
+  display: flex;
+  justify-content: space-around;
+  min-height: 200px; }
+
+.friends {
+  margin: 10px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100px;
+  object-fit: cover; }
